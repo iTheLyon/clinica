@@ -53,6 +53,12 @@ INSERT INTO `pacientes` (`id`, `nombres`, `apellidos`, `edad`, `talla_m`, `peso_
 	(18, 'Stev', 'Chucuya', 18, 160.00, 45.00, '1', '0', '0', '0', '0', '0', '0', '0', '2005-11-13', ''),
 	(20, 'Pedrito', 'Palotes', 14, 1.45, 36.00, '0', '0', '0', '0', '0', '0', '0', '0', '2024-05-27', '');
 
+CREATE TABLE usuarios 
+(usuario VARCHAR(50) NOT NULL,
+password VARCHAR(50) NOT NULL)
+ 
+INSERT INTO `usuarios` (`usuario`, `password`) VALUES ('Nicky', '123');
+
 /*!40103 SET TIME_ZONE=IFNULL(@OLD_TIME_ZONE, 'system') */;
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
 /*!40014 SET FOREIGN_KEY_CHECKS=IFNULL(@OLD_FOREIGN_KEY_CHECKS, 1) */;
