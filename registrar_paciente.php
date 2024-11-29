@@ -5,7 +5,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $apellidos = $_POST['apellidos'];
     $edad = $_POST['edad'];
 
-    $sql = "INSERT INTO pacientes (nombres,apellidos, edad) VALUES ('$nombre', $apellidos, '$edad')";
+    $sql = "INSERT INTO pacientes (nombres,apellidos, edad) VALUES ('$nombre', '$apellidos', '$edad')";
     $conn->query($sql);
 
     header('Location: menu.php');
